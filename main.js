@@ -1,1 +1,1 @@
-console.log("This is working!");
+(()=>{"use strict";function n(){const n=document.createElement("div");return n.innerHTML="HELLO THERE",n}document.body.appendChild(n()),console.log("This is working!"),n()})();
