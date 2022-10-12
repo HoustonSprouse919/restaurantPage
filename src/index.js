@@ -16,7 +16,7 @@
 
    })();
    function changePage(){
-    console.log("THis is working")
+    homePage();
 }
-console.log("This is working!")
-import { h1, image, paragraph1 } from "./homePage"
+import { homePage } from "./homePage"
+

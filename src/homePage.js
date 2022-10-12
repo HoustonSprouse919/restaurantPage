@@ -1,3 +1,4 @@
+function homePage(){
 function h1() {
   let element = document.createElement("h1");
   element.append("Houston's Pizza");
@@ -17,5 +18,5 @@ function h1() {
  document.querySelector('#content').appendChild(h1());
  document.querySelector('#content').appendChild(image());
  document.querySelector('#content').appendChild(paragraph1());
-
-  export { h1, image };
+}
+  export { homePage };
