@@ -1,4 +1,4 @@
-(function contactPage(){
+function menuPage(){
     function h1() {
       let element = document.createElement("h1");
       element.append("Houston's Pizza");
@@ -18,5 +18,5 @@
      document.querySelector('#content').appendChild(h1());
      document.querySelector('#content').appendChild(image());
      document.querySelector('#content').appendChild(paragraph1());
-    })();
-      export { homePage };
+    }
+      export { menuPage };

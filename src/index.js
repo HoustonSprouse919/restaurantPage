@@ -1,3 +1,7 @@
+import { homePage } from "./homePage"
+import { menuPage} from './menuPage';
+import { contactPage} from './contactPage';
+homePage();
 (function buttons() {
     let button1 = document.createElement("button");
     button1.append("Home");
@@ -14,9 +18,17 @@
     button3.addEventListener("click", changePage);
     document.querySelector('#tabs').appendChild(button3);
 
+    function clearContent(){
+        const myNode = document.getElementById("content");
+        while (myNode.firstChild) {
+            myNode.removeChild(myNode.lastChild);
+        }
+    }
+    
+    function changePage(){
+        clearContent();
+        homePage();
+    }
    })();
-   function changePage(){
-    homePage();
-}
-import { homePage } from "./homePage"
+
 
