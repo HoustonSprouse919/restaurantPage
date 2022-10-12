@@ -1,7 +1,7 @@
 function menuPage(){
     function h1() {
       let element = document.createElement("h1");
-      element.append("Houston's Pizza");
+      element.append("Houston's Menu");
       return element;
      }
      function image() {
