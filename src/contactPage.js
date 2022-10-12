@@ -1,7 +1,7 @@
 function contactPage(){
     function h1() {
       let element = document.createElement("h1");
-      element.append("Houston's Pizza");
+      element.append("Contact us");
       return element;
      }
      function image() {
