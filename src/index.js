@@ -1,8 +1,22 @@
 import { homePage } from "./homePage"
 import { menuPage} from './menuPage';
 import { contactPage} from './contactPage';
-homePage();
+import Icon from './icon.png';
 (function navBar() {
+    const navArea = document.createElement('div');
+    navArea.setAttribute('id',"navArea");
+
+    const element = document.createElement('div');
+    element.setAttribute('id',"logoDiv");
+    const myIcon = new Image();
+    myIcon.src = Icon;
+    myIcon.setAttribute('id',"logo");
+    element.appendChild(myIcon);
+
+(function buttons(){
+    const buttonArea = document.createElement('div');
+    buttonArea.setAttribute('id',"buttonArea");
+
     let button1 = document.createElement("button");
     button1.append("Home");
     button1.addEventListener("click", clearContent);
@@ -25,10 +39,14 @@ homePage();
             myNode.removeChild(myNode.lastChild);
         }
     }
-
-    document.querySelector('#tabs').appendChild(button1);
-    document.querySelector('#tabs').appendChild(button2);
-    document.querySelector('#tabs').appendChild(button3);
+    document.querySelector('#content').appendChild(navArea);
+    document.querySelector('#navArea').appendChild(buttonArea);
+    document.querySelector('#buttonArea').appendChild(element);
+    document.querySelector('#buttonArea').appendChild(button1);
+    document.querySelector('#buttonArea').appendChild(button2);
+    document.querySelector('#buttonArea').appendChild(button3);
+})();
    })();
+   homePage();
 
 
