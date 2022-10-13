@@ -2,7 +2,7 @@ import { homePage } from "./homePage"
 import { menuPage} from './menuPage';
 import { contactPage} from './contactPage';
 homePage();
-(function buttons() {
+(function navBar() {
     let button1 = document.createElement("button");
     button1.append("Home");
     button1.addEventListener("click", clearContent);
