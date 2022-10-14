@@ -4,9 +4,9 @@ function h1() {
   element.append("Houston's Pizza");
   return element;
  }
- function image() {
-  let element = document.createElement("IMG");
-  element.setAttribute("src", "https://i.pinimg.com/736x/9d/25/6b/9d256bf90bf80e38d3a8be2efc7444a9.jpg");
+ function hero() {
+  const element = document.createElement('div');
+  element.setAttribute('id',"hero");
   return element;
  }
  function paragraph1() {
@@ -15,8 +15,8 @@ function h1() {
   return element;
  }
 
- document.querySelector('#content').appendChild(h1());
- document.querySelector('#content').appendChild(image());
- document.querySelector('#content').appendChild(paragraph1());
+ document.querySelector('#content').appendChild(hero());
+ document.querySelector('#hero').appendChild(h1());
+ document.querySelector('#hero').appendChild(paragraph1());
 }
   export { homePage };

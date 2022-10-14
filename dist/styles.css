@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 body{
     display: inline-block;
+    height: 100%;
     width: 100%;
     margin: 0;
 }
 #content{
-    display: inline;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
 }
 #navArea{
+    height: 7vh;
     background-color: rgb(31, 31, 31);
     display: flex;
-    
+    justify-content: space-between;
+    align-content: center;
 }
 #navArea button{
     background-color: transparent;
@@ -17,12 +23,13 @@ body{
     color: white;
     cursor: pointer;
     font-size: 20px;
+    font-weight: bold;
     margin: 20px;
 }
 #logoDiv{
 height: 70px;
+margin: 0px 10px 10px 25px;
 width: 200px;
-background-color: red;
 padding: 0px;
 }
 #logo{
@@ -32,6 +39,40 @@ padding: 0px;
     object-position: top;
     margin:-50% -50% -50% -100%;
 }
-h1{
+#buttonArea{
+    display: flex;
     font-weight: bold;
 }
+h1{
+    font-weight: bold;
+    margin: 0px;
+}
+
+/* This is for the homePage section*/
+#hero{
+    height: 93vh;
+    margin: 0px;
+    background-color: red;
+    background: url('./pizza.jpg');
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#hero h1{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    padding-top: 20vh;
+    text-align: center;
+}
+footer {
+    background-color: rgb(44, 44, 44,.85);
+    bottom:0;
+    color: whitesmoke;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    left:0;
+    position:fixed;
+    width: 100%;
+   }

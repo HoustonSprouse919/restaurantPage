@@ -13,6 +13,12 @@ import Icon from './icon.png';
     myIcon.setAttribute('id',"logo");
     element.appendChild(myIcon);
 
+    let footer = document.createElement("FOOTER");
+    var p = document.createElement("P");
+      var txt = document.createTextNode("Houston's Pizza - Copyright ©, 2022");
+      p.appendChild(txt);
+      footer.appendChild(p);
+
 (function buttons(){
     const buttonArea = document.createElement('div');
     buttonArea.setAttribute('id',"buttonArea");
@@ -39,12 +45,13 @@ import Icon from './icon.png';
             myNode.removeChild(myNode.lastChild);
         }
     }
-    document.querySelector('#content').appendChild(navArea);
+    document.querySelector('#tabs').appendChild(navArea);
+    document.querySelector('#navArea').appendChild(element);
     document.querySelector('#navArea').appendChild(buttonArea);
-    document.querySelector('#buttonArea').appendChild(element);
     document.querySelector('#buttonArea').appendChild(button1);
     document.querySelector('#buttonArea').appendChild(button2);
     document.querySelector('#buttonArea').appendChild(button3);
+    document.querySelector('#tabs').appendChild(footer);
 })();
    })();
    homePage();
