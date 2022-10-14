@@ -11,10 +11,10 @@ function h1() {
  }
  function paragraph1() {
   let element = document.createElement("p");
-  element.append("Welcome to Houston's pizza. We serve the best Za in town!!")
+  element.append("We serve the best Za in town!!")
   return element;
  }
-
+ document.body.style.backgroundImage = "url('pizza.jpg')";
  document.querySelector('#content').appendChild(hero());
  document.querySelector('#hero').appendChild(h1());
  document.querySelector('#hero').appendChild(paragraph1());

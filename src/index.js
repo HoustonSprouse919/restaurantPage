@@ -45,6 +45,7 @@ import Icon from './icon.png';
             myNode.removeChild(myNode.lastChild);
         }
     }
+
     document.querySelector('#tabs').appendChild(navArea);
     document.querySelector('#navArea').appendChild(element);
     document.querySelector('#navArea').appendChild(buttonArea);
@@ -54,6 +55,6 @@ import Icon from './icon.png';
     document.querySelector('#tabs').appendChild(footer);
 })();
    })();
-   homePage();
+   contactPage();
 
 
