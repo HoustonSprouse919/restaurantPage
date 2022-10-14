@@ -62,7 +62,7 @@ h1{
     color: white;
     font-size: 80px;
     font-family: 'Playfair Display', serif;
-    padding: 15vh 75vh 0vh 0vh;
+    padding: 15vh 50vw 0vh 0vh;
     text-align: center;
 }
 #hero p{
@@ -70,7 +70,7 @@ h1{
     font-size: 30px;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
-    padding: 0vh 75vh 0vh 0vh;
+    padding: 0vh 50vw 0vh 0vh;
     text-align: center;
 }
 
@@ -96,7 +96,7 @@ h1{
 #contactDiv{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 40px;
 }
 .contactImage{

@@ -55,6 +55,6 @@ import Icon from './icon.png';
     document.querySelector('#tabs').appendChild(footer);
 })();
    })();
-   contactPage();
+   homePage();
 
 

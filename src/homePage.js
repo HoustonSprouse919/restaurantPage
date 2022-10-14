@@ -1,7 +1,9 @@
 function homePage(){
 function h1() {
   let element = document.createElement("h1");
-  element.append("Houston's Pizza");
+  element.append("Houston's");
+  element.appendChild(document.createElement('br'));
+  element.append("Pizza");
   return element;
  }
  function hero() {
@@ -11,7 +13,7 @@ function h1() {
  }
  function paragraph1() {
   let element = document.createElement("p");
-  element.append("We serve the best Za in town!!")
+  element.append("We serve the best Za in town!")
   return element;
  }
  document.body.style.backgroundImage = "url('pizza.jpg')";
