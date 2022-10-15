@@ -1,3 +1,4 @@
+import { menuPage} from './menuPage';
 function homePage(){
 function h1() {
   let element = document.createElement("h1");
@@ -16,9 +17,25 @@ function h1() {
   element.append("We serve the best Za in town!")
   return element;
  }
+ function button(){
+ let navButton = document.createElement("button");
+ navButton.setAttribute('id',"navButton");
+    navButton.append("Check out our menu :)");
+    navButton.addEventListener("click", clearContent);
+    navButton.addEventListener("click", menuPage);
+
+    return navButton;
+ }
+ function clearContent(){
+  const myNode = document.getElementById("content");
+  while (myNode.firstChild) {
+      myNode.removeChild(myNode.lastChild);
+  }
+}
  document.body.style.backgroundImage = "url('pizza.jpg')";
  document.querySelector('#content').appendChild(hero());
  document.querySelector('#hero').appendChild(h1());
  document.querySelector('#hero').appendChild(paragraph1());
+ document.querySelector('#hero').appendChild(button());
 }
   export { homePage };
