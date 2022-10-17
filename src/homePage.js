@@ -12,6 +12,11 @@ function h1() {
   element.setAttribute('id',"hero");
   return element;
  }
+ function textDiv() {
+  const element = document.createElement('div');
+  element.setAttribute('id',"textDiv");
+  return element;
+ }
  function paragraph1() {
   let element = document.createElement("p");
   element.append("We serve the best Za in town!")
@@ -34,8 +39,9 @@ function h1() {
 }
  document.body.style.backgroundImage = "url('pizza.jpg')";
  document.querySelector('#content').appendChild(hero());
- document.querySelector('#hero').appendChild(h1());
- document.querySelector('#hero').appendChild(paragraph1());
- document.querySelector('#hero').appendChild(button());
+ document.querySelector('#hero').appendChild(textDiv());
+ document.querySelector('#textDiv').appendChild(h1());
+ document.querySelector('#textDiv').appendChild(paragraph1());
+ document.querySelector('#textDiv').appendChild(button());
 }
   export { homePage };
